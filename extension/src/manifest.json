@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Nyxt",
+  "description": "extension",
+  "version": "0.0.1",
+
+  "background": {
+    "service_worker": "background.ts",
+    "type": "module"
+  },
+
+  "action": {
+    "default_title": "Nyxt"   
+  },
+
+  "host_permissions": [
+    "http://localhost:4000/*"
+  ],
+   "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ "/overlay/overlay.ts" ],
+      "matches": [ "<all_urls>" ]
+    } 
+  ]
+}

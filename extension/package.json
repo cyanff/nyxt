@@ -1,0 +1,27 @@
+{
+  "name": "nyxt",
+  "version": "1.0.0",
+  "description": "The wonderful summarizer ^_^",
+  "scripts": {
+    "build": "npm run clean && parcel build src/manifest.json --log-level verbose --config @parcel/config-webextension",
+    "clean": "rm -rf dist/"
+  },
+  "author": "Phan",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.11.0",
+    "@parcel/optimizer-data-url": "^2.11.0",
+    "@parcel/transformer-inline-string": "^2.11.0",
+    "@types/chrome": "^0.0.260",
+    "@types/firefox-webext-browser": "^120.0.0",
+    "@types/web": "^0.0.138",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "parcel": "^2.11.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@mozilla/readability": "github:mozilla/readability",
+    "code-tag": "^1.2.0"
+  }
+}
