@@ -28,8 +28,9 @@ I've made every effort to make the installation process as easy as possible.
 
 In *summary* ;)
 <details>
+  
   <summary>
-    Download and run the [setup.ps1 powershell script](https://www.nyxt.ai/setup.ps1) as ***administrator***.
+    Download and run the setup.ps1 powershell script as as administrator. https://www.nyxt.ai/setup.ps1
   </summary>
   
 - This will install all TensorRT LLM dependencies (aside from cuDNN).
