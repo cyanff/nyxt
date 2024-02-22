@@ -108,8 +108,13 @@ However, the engine provided should work on *any* [Ada](https://en.wikipedia.org
 
 
 ### Debugging
-Powershell installation script failed:
-You could perform all the steps the installation script goes through manually:
+
+<details>
+  <summary> 
+    Powershell installation script failed. 
+  </summary>
+
+  You could perform all the steps the installation script goes through manually:
 - Install TensorRT LLM dependencies
   - Cuda 12.2
   - Microsoft MPI 10.11.1
@@ -119,9 +124,26 @@ You could perform all the steps the installation script goes through manually:
 - Clone the Nyxt huggingface repo that contains everything needed to install the extension and run the inference server: https://huggingface.co/thisisphan/nyxt
   - Install Git and Git LFS
   - cd into the cloned directory and run `pip install -r requirements.txt`
-- Run the inference server with `python server.py` (Be sure to disable powershell [quick edit](https://stackoverflow.com/questions/30418886/how-and-why-does-quickedit-mode-in-command-prompt-freeze-applications) mode so you don't accidentally pause the inference server!)
+- Run the inference server with `python server.py` (Be sure to disable Powershell [quick edit](https://stackoverflow.com/questions/30418886/how-and-why-does-quickedit-mode-in-command-prompt-freeze-applications) mode so you don't accidentally pause the inference server!)
 - Install the extension
   - Open chrome -> settings -> extension -> manage extensions.
   - Enable developer mode
   - Click on "load unpacked", load the folder named `extension` inside of the nyxt cloned repo.
 - Done!
+
+</details>
+
+<details>
+  <summary>
+    The extension is perma loading.
+  </summary>
+
+  This probably is because Powershell [quick edit](https://stackoverflow.com/questions/30418886/how-and-why-does-quickedit-mode-in-command-prompt-freeze-applications) is on and you've accidentally clicked inside the powershell window, which pauses the inference server.
+  
+  You could right click the powershell window title -> properties -> disable quick edit mode.
+  
+  Re run the script, refresh the page, and regenerate the summary.
+  
+</details>
+
+
