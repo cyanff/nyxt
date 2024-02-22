@@ -108,4 +108,20 @@ However, the engine provided should work on *any* [Ada](https://en.wikipedia.org
 
 
 ### Debugging
-Powershell installation script failed
+Powershell installation script failed:
+You could perform all the steps the installation script goes through manually:
+- Install TensorRT LLM dependencies
+  - Cuda 12.2
+  - Microsoft MPI 10.11.1
+  - Python 3.10.11
+  - cuDNN 8.9.7
+  - TensorRT LLM 0.7.1
+- Clone the Nyxt huggingface repo that contains everything needed to install the extension and run the inference server: https://huggingface.co/thisisphan/nyxt
+  - Install Git and Git LFS
+  - cd into the cloned directory and run `pip install -r requirements.txt`
+- Run the inference server with `python server.py` (Be sure to disable powershell [quick edit](https://stackoverflow.com/questions/30418886/how-and-why-does-quickedit-mode-in-command-prompt-freeze-applications) mode so you don't accidentally pause the inference server!)
+- Install the extension
+  - Open chrome -> settings -> extension -> manage extensions.
+  - Enable developer mode
+  - Click on "load unpacked", load the folder named `extension` inside of the nyxt cloned repo.
+- Done!
