@@ -32,9 +32,22 @@ In *summary* ;)
   <summary>
     Download and run the setup.ps1 powershell script as as administrator. https://www.nyxt.ai/setup.ps1
   </summary>
-  
+
 - This will install all TensorRT LLM dependencies (aside from cuDNN).
 - It'll also download the extension, inference server and its required tokenizer and engine. These will be downloaded from huggingface. https://huggingface.co/thisisphan/nyxt
+- You could skip any dependencies you already have by using flags when calling the script
+
+Available flags
+  ```
+  -skipCUDA,
+  -skipPython,
+  -skipMPI,
+  -skipGit,
+  -skipLFS
+  ```
+  
+Ex:
+`.\setup.ps1 -skipCUDA -skipPython`
 </details>
 
 <details>
@@ -66,9 +79,20 @@ In *summary* ;)
 - load the nyxt/extension/ folder.
 </details>
    
-Here's a Youtube video demonstrating the installation and usage: TODO
+Here's a Youtube video demonstrating the installation and usage.
 
-## Software Versions
+
+## Gen AI on RTX Contest Info
+This project was created for the Nvidia Gen AI on RTX PCs contest.
+
+It's submitted under the **Text-Based Applications** category.
+
+It utilizes TensorRT LLM + Mistral 7b 4bit to allow for nearly instaneous summaries.
+
+https://www.nvidia.com/en-us/ai-data-science/generative-ai/rtx-developer-contest/
+
+
+### Software Versions
 - Windows 10
 - TensorRT LLM 0.7.1
 - Python 3.10.11
@@ -77,7 +101,11 @@ Here's a Youtube video demonstrating the installation and usage: TODO
 - MPI 10.1.1
 
 
-## Tested Hardware
+### Tested Hardware
 RTX 4090
 
 However, the engine provided should work on *any* [Ada](https://en.wikipedia.org/wiki/Ada_Lovelace_(microarchitecture)) series GPU.
+
+
+### Debugging
+Powershell installation script failed
