@@ -25,6 +25,7 @@ Nyxt is built with accessibility in mind.
 
 ## How to Install Nyxt
 I've made every effort to make the installation process as easy as possible.
+
 Here's a Youtube video showcasing how to install Nyxt: https://www.youtube.com/watch?v=QJt7szR6kxw
 
 In *summary* ;)
