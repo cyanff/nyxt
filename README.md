@@ -15,7 +15,7 @@ Nyxt features beautiful, soothing animations as summaries are generated.
 
 
 
-## A11Y
+## A11y
 Nyxt is built with accessibility in mind.
 - You could increase and decrease font sizes
 - You could scale the window to your liking
@@ -25,6 +25,7 @@ Nyxt is built with accessibility in mind.
 
 ## How to Install Nyxt
 I've made every effort to make the installation process as easy as possible.
+Here's a Youtube video showcasing how to install Nyxt: https://www.youtube.com/watch?v=QJt7szR6kxw
 
 In *summary* ;)
 <details>
@@ -79,8 +80,6 @@ Ex:
 - load the nyxt/extension/ folder.
 </details>
    
-Here's a Youtube video demonstrating the installation and usage.
-
 
 ## Gen AI on RTX Contest Info
 This project was created for the Nvidia Gen AI on RTX PCs contest.
